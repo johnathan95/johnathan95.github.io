@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="portfolio">
+    <meta name="author" content="Johnathan NADARAJAH">
 
     <title>Johnathan NADARAJAH Portfolio</title>
 
@@ -17,6 +17,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/JN.jpg" sizes="32x32" /><link rel="icon" href="img/JN.jpg" sizes=" 192x192" />
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -31,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><small>Johnathan NADARAJAH</small></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><small>J.N Portfolio</small></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +42,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">À propos de moi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#formation">Formation</a>
+              <a class="nav-link js-scroll-trigger" href="#formation">Formations</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#professionel">expériences professionnelles</a>
@@ -60,6 +61,236 @@
       </div>
     </nav>
 
+<style type="text/css">body {
+  
+    text-align:center;
+}
+
+.note {
+  position:absolute;
+  top:20px;
+  left:10px;
+}
+
+
+.wrapper {
+    font-size:14px; 
+    line-height:40px;    
+    position:absolute;
+    top:70px;
+    left:140px;
+    height:40px;
+    width:40px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin:50%;     
+    -webkit-animation-name: ciycle;  
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 6s;
+}
+
+.boxes {
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-transition: all 1s ease-in-out;      
+}
+
+.va {
+    background:black;
+    color:#fff;
+    border-radius:50px;
+    position:absolute;
+    top:-50px;
+    left:0;
+    height:40px;
+    width:40px;
+    text-align:center; 
+    -webkit-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
+    -webkit-transition:all 0.8s ease-in-out;  
+    -webkit-animation-name: ciycle2;      
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1.4s;    
+}
+
+.va.type2 {
+    -webkit-transform:rotateY(180deg) translateZ(1px);  
+    -webkit-animation-name: ciycle3;      
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1.4s;        
+}
+
+.tags {
+    position:absolute;
+    top:85px;
+    left:150px;
+    text-align:center;
+    line-height:40px;
+    height:50px;
+    width:50px;
+    opacity:0;
+    -webkit-transition: all .5s ease-out;   
+    -webkit-transition-delay: 0.30s;       
+}
+
+.tag {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    -webkit-animation-name: tag;      
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-duration: 2.5s;
+}
+
+.tag:nth-child(1) {
+   -webkit-animation-delay:0;
+}
+
+.tag:nth-child(2) {
+    -webkit-animation-delay:.5s;
+}
+
+.tag:nth-child(3) {
+    -webkit-animation-delay:1s;
+}
+
+.tag:nth-child(4) {
+    -webkit-animation-delay:1.5s;
+}
+
+.tag:nth-child(5) {
+    -webkit-animation-delay:2s;
+}
+
+.smile {
+    -webkit-transition: all .6s ease-out;      
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    border-radius:2px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:40px;
+    opacity:0.50;
+    line-height:40px;
+    text-align:center;
+    color:#fff;
+    -webkit-transition: all 1s ease-in-out;   
+}
+
+.one {
+    background:black;
+    -webkit-transform:translateZ(20px);  
+}
+
+.two {
+    background:red;
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(-20px);        
+}
+
+.three {
+    background:blue;
+    -webkit-transform: translateY(0) translateZ(-20px);            
+}
+.four {
+    background:green;
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(20px);            
+}
+.five {
+    background:darkblue;
+    -webkit-transform: rotateY(-90deg) translateX(0) translateY(0) translateZ(20px);            
+}
+.six {
+    background:purple;
+    -webkit-transform: rotateY(90deg) translateX(0) translateZ(20px) translateY(0);            
+}
+
+.logo:hover .box {
+    background:gray;
+    opacity:0.25;
+}
+.logo:hover .one{
+    -webkit-transform: rotateX(90deg) translateZ(20px) translateY(40px);
+    -webkit-transform-origin: 100%; 
+}
+.logo:hover .two{
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(20px);
+opacity:1;    
+}
+.logo:hover .three {
+    -webkit-transform: rotateX(-90deg) translateY(40px) translateZ(-20px); 
+}
+.logo:hover .five {
+    -webkit-transform: rotateZ(90deg) rotateY(-90deg) translateX(0) translateY(40px) translateZ(20px);  
+}
+.logo:hover .six{
+    -webkit-transform: rotateY(90deg) translateX(20px) translateZ(20px) translateY(-20px) rotateX(90deg);
+    -webkit-transform-origin: 100%; 
+}
+
+.logo:hover .boxes {
+    top:40px;
+}
+
+.logo:hover .va {
+    top:-75px;
+}
+.logo:hover .tags {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin:50%; 
+    -webkit-transform:  rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg); 
+    left:150px;
+    top:80px;
+    opacity:1;   
+}
+
+@-webkit-keyframes ciycle {
+    from {
+        -webkit-transform: rotateX(-25deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(-25deg) rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes ciycle2 {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+@-webkit-keyframes ciycle3 {
+    from {
+        -webkit-transform:rotateY(180deg) translateZ(1px);
+    }
+    to {
+        -webkit-transform:rotateY(-180deg) translateZ(1px);
+    }
+}
+
+@-webkit-keyframes tag {
+    0%{
+        opacity:1;        
+    }
+    100% {
+        opacity:0;  
+        top:-55px;  
+    }
+}</style>
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
@@ -86,13 +317,16 @@
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-10 mx-auto text-center">
             <h2 class="section-heading text-white">À propos de moi</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">
-            Étudiant en 2ème annéee école d'ingénieur 🎓 en informatique à l'ESIEA. 
-            Rigoureux, persévérant et polyvalent, je souhaiterai mettre mes qualités aux services d'une entreprise.</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#formation">Télécharger mon CV</a>
+            <img src="img/JN.jpg" alt="jn" width="150" height="150" style="border-radius: 50%;"> <p class="text-faded mb-4">
+            Étudiant en 2ème année école d'ingénieur 🎓 en informatique à l'ESIEA.<br>
+            Rigoureux, persévérant et polyvalent, je souhaiterai mettre mes qualités aux services d'une entreprise.
+            <br><br>
+
+            J'ai rejoins la banque de financement, de gestion et de services financiers : Natixis dans le cadre de ma formation d'Ingénieur en apprentissage en tant qu'assistant chef de projet développeur WEB, rattaché à la Direction Opérationnelle des Systèmes d'Information. Plus précisément, au sein de l'équipe Relation Groupe BPCE.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Me contacter</a>    <a class="btn btn-light btn-xl js-scroll-trigger" href="#formation">Télécharger mon CV </a>
           </div>
         </div>
       </div>
@@ -102,11 +336,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Formation</h2>
+            <h2 class="section-heading">Formations</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
+        Voici mon parcour scolaire qui ma permis d'acquérir mes connaissances actuelles.<br>
+        Cliquer sur les logos des formations et les <small><a href="#professionnel">+</a></small> pour avoir plus d'informations.
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
@@ -133,7 +369,7 @@
               <i class="fa fa-4x text-primary mb-3 sr-icons">
               <img class="img-fluid" src="img/logo/iut_orsay.jpeg" alt="" width="135" height="135"></i>
               <h3 class="mb-3">IUT d'Orsay</h3>  <p>DUT Informatique</p>
-              <p class="text-muted mb-0"><small>Wrexham University – 67 Regent Street, Wrexham Wales</small></p>
+              <p class="text-muted mb-0"><small>IUT d'Orsay - Plateau de Moulon, 91400 ORSAY</small></p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -142,7 +378,7 @@
               <i class="fa fa-4x text-primary mb-3 sr-icons">
               <img class="img-fluid" src="img/logo/jean_perrin.jpeg" alt="" width="100" height="100"></i>
               <h3 class="mb-3">Lycée Jean-Perrin</h3>  <p>Baccalauréat Scientifique  <small><a href="" data-toggle="modal" data-target="#myModal">+</a></small></p>
-              <p class="text-muted mb-0"><small>Lycée Jean Perrin – Saint-Ouen-L’Aumône (95)</small></p>
+              <p class="text-muted mb-0"><small>Lycée Jean Perrin – 2, rue des Égalisses, 95310 Saint-Ouen-l’Aumône</small></p>
             </div>
           </div>
         </div>
@@ -161,7 +397,8 @@
         <div class="modal-body">
           <p>Baccalauréat Scientifique Science de l’ingénieur 
             <br> Spécialisation : Mathématiques
-            <br> Option : Histoire-Géographie</p>
+            <br> Option : Histoire-Géographie
+            <br> <br> Obtention en juillet 2013</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -180,23 +417,25 @@
           </div>
         </div>
       </div>
+      Voici mon parcour professionnel qui ma permis d'acquérir mes connaissances actuelles.<br>
+      Cliquer sur les logos des entreprises et les <small><a href="#professionnel">+</a></small> pour avoir plus d'informations.
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <p class="text-muted mb-0"><small>août 2016 - aujourd'hui (1 an et 10 mois)</small></p>
-              <i class="fa fa-4x text-primary mb-3 sr-icons"><img class="img-fluid" src="img/logo/esiea_logo.png" alt="" width="200" height="200"></i>
-              <h3 class="mb-3">ESIEA</h3>
-               <p>Cursus ingénieur</p>
+              <p class="text-muted mb-0"><small>nov. 2016 - aujourd'hui (1 an et 8 mois)</small></p>
+              <a href="" data-toggle="modal" data-target="#ModalNatixis"><i class="fa fa-4x text-primary mb-3 sr-icons"><img class="img-fluid" src="img/logo/natixis_logo.gif" alt="" width="200" height="200" ></i></a>
+              <h3 class="mb-3">Natixis</h3>
+               <p>Assistant chef de projet (Alternance)  <small><a href="" data-toggle="modal" data-target="#myModalNatixis">+</a></small></p>
               <p class="text-muted mb-0"><small>ESIEA Paris – 74 bis Avenue Maurice Thorez, 94200 Ivry-sur-Seine</small></p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <p class="text-muted mb-0"><small>juillet 2017 - août 2017 (1 mois)</small></p>
+              <p class="text-muted mb-0"><small>avr. 2016 - juil. 2016 (3 mois)</small></p>
               <i class="fa fa-4x text-primary mb-3 sr-icons">
-              <img class="img-fluid" src="img/logo/wrexham-glyndwr.jpg" alt="" width="170" height="170"></i>
-              <h3 class="mb-3">Glyndwr</h3>  <p>Summer School Graduation</p>
+              <img class="img-fluid" src="img/logo/safran-logo.png" alt="" width="200" height="200"></i>
+              <h3 class="mb-3">Safran Aircraft Engines</h3>  <p>Développeur WEB (Stage)  <small><a href="" data-toggle="modal" data-target="#myModalSafran">+</a></small></p>
               <p class="text-muted mb-0"><small>Wrexham University – 67 Regent Street, Wrexham Wales</small></p>
             </div>
           </div>
@@ -222,19 +461,44 @@
       </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModalNatixis" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Détails du Baccalauréat</h4>
+          <h4 class="modal-title">Assistant chef de projet</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Baccalauréat Scientifique Science de l’ingénieur 
-            <br> Spécialisation : Mathématiques
-            <br> Option : Histoire-Géographie</p>
+          <p style="text-align: left;"><small>
+                    • Gestion de projet, recette d’applications, programmation Web, formation pour les utilisateurs <br>
+                    • Conception et développement d’une application de reporting, maintenance corrective <br>
+                    • Animation d’atelier de modélisation et d’impression 3D, réalisation de fiche pratiques <br>
+                    • Développement d’une application web de reporting pour la réalisation de rapport d’activité <br></small>
+                  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="ModalNatixis" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Natixis</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>
+                   <img class="img-fluid" src="img/logo/natixis_logo.gif" alt="" width="200" height="200" >Natixis est une banque de financement, de gestion et de services financiers, créée en 2006, filiale du groupe BPCE, elle-même issue de la fusion des groupes Caisse d'épargne et Banque populaire. 
+                    </small>
+                  </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -253,7 +517,80 @@
           </div>
         </div>
       </div>
+
       <div class="container">
+        <div class="row">
+           
+    <div class="col-sm-10 col-lg-7 mx-auto">
+      <div class="row pb-4">
+        <div class="col-sm-2 mx-auto skill-logo">
+          <img class="skill-svg" src="../../assets/images/electron.svg">
+        </div>
+        <div class="col-sm-2 mx-auto skill-logo">
+          <div class="skill-logo">
+            <img src="../../assets/images/php.svg">
+          </div>
+        </div>
+        <div class="col-sm-2 mx-auto skill-logo">
+          <div class="skill-logo">
+            <img src="../../assets/images/angular.svg">
+          </div>
+        </div>
+        <div class="col-sm-2 mx-auto skill-logo">
+          <div class="skill-logo">
+            <img src="../../assets/images/android.svg">
+          </div>
+        </div>
+        <div class="col-sm-2 mx-auto skill-logo">
+          <div class="skill-logo">
+            <img src="../../assets/images/ps.svg">
+          </div>
+        </div>
+      </div>
+      <hr class="style-one">
+      <div class="row skills-font pb-1 pt-4 text-center">
+        <div class="col-sm-6">
+          <h4>DEV WEB <i class="fa fa-code color-5"></i></h4>
+          <p>PHP, JavaScript, ASP.NET</p>
+          <div class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%">85%</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>DEV MOBILE <i class="fa fa-android color-4"></i></h4>
+          <p>Android, IOS, Ionic</p>
+          <div class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 70%">70%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row skills-font pb-1 text-center">
+        <div class="col-sm-6">
+          <h4>DEV DESKTOP</h4>
+          <p>Java, C#, Shell, ASM</p>
+          <div class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 75%">75%</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>METHODES AGILE</h4>
+          <p>Scrum, Jira, Management d'équipe</p>
+          <div class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%">70%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row skills-font pb-1 text-center">
+        <div class="col-sm-12">
+          <h4>DESIGN</h4>
+          <p>Blender, Photofiltre, Photoshop, Unity 3D, Monatge Video : Power Director</p>
+          <div class="progress">
+            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 80%">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
@@ -288,18 +625,14 @@
     </section>
 
     <section class="p-0" id="portfolio">
-    
       <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-          <div id="myBtnContainer" >
-            <button class="btn btn-light btn-xl sr-button active"  onclick="filterSelection('all')"> Show all</button>
-            <button class="btn btn-light btn-xl sr-button"  onclick="filterSelection('technique')">Projets technique</button>
-            <button class="btn btn-light btn-xl sr-button"  onclick="filterSelection('humain')"> Projets humain</button>
-          </div>
+        <h2 class="mb-4">Portfolio</h2>
+        Voici un aperçu des différents projets que j'ai pu réaliser, à titre personnel, universitaire, professionnel ou associatif.
       </div>
     </section>
       <div class="container-fluid p-0">
+
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
@@ -416,13 +749,6 @@
   </div>
     </section>
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section>
-
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -435,7 +761,7 @@
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>(+33)7 50 99 64 61</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
@@ -444,9 +770,87 @@
             </p>
           </div>
         </div>
+        <div class="row">
+    <div class="col-sm-10 col-lg-7 mx-auto">
+      <h3 class="pb-5">Contact</h3>
+      <app-form><div class="container-fluid col-sm-8">
+  <form action="https://formspree.io/johnathan.nadarajah@gmail.com" method="POST" novalidate="" class="ng-pristine ng-invalid ng-touched">
+    <div class="form-row">
+      <div class="form-group col-sm-6">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="email" id="form-email" name="email" placeholder="Email" type="email">
+        <!---->
       </div>
-    </section>
+      <div class="form-group col-sm-6">
+        <input class="form-control" formcontrolname="name" id="form-name" name="name" placeholder="Nom" type="email">
+        <!---->
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control ng-pristine ng-invalid ng-touched" formcontrolname="text" id="text" placeholder="Votre message" rows="8"></textarea>
+      <!----><div class="alert alert-danger">Texte entre 10-500 caractères</div>
+    </div>
+    <div class="text-right">
+      <button class="btn btn-primary btn-footer" type="submit" disabled="">Envoyer</button>
+    </div>
+  </form>
+</div></app-form>
+    </div>
+  </div>
+  <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <a href="https://www.linkedin.com/in/johnathan-nadarajah-319519ba/" target="_blank" class="linkedin"><i class="fa fa-4x fa fa-linkedin text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">LinkedIn</h3></a>
+              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa fa-github text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">GitHub</h3>
+              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa fa-google-plus text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Google+</h3>
+              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-facebook text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Facebook</h3>
+              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+         <a href="https://www.facebook.com/capshil" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+         <a href="https://twitter.com/CapsHil" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+         <a href="https://plus.google.com/u/1/103638423437603217657" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+         <a href="https://www.linkedin.com/in/johnathan-nadarajah-319519ba/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+         <a href="https://github.com/CapsHil" target="_blank" class="github"><i class="fa fa-github"></i></a>
+    </section>
+    <!-- Footer Start -->
+    <footer class="footer-section">
+      <small>COPYRIGHT © 2018 Johnathan NADARAJAH. ALL RIGHTS RESERVED.</small>
+        <div class="container">
+            <div class="row">
+               
+      <div class="col-md-4 text-left">
+          </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+    
+    <!-- Back to Top Start -->
+    <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- Back to Top End -->
+    
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
