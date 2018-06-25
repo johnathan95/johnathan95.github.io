@@ -1,150 +1,155 @@
+<h2>PORTFOLIO</h2>
+<style type="text/css">
+    * {
+    box-sizing: border-box;
+}
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
-    
-    <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/plugin.css">
-    
-    <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Portfolio Start -->
-    <section id="portfolio" class="portfolio section-space-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title">
-                        <h2>My Portfolio.</h2>
-                        <!--<p>Voici un aperçu des différents projets que j'ai pu réaliser, à titre personnel, universitaire, professionnel ou associatif.</p>-->
-                        <p>Here is an overview of the various projects that I have been able to carry out, as a personal, academic, professional or associative.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <ul class="portfolio">
-                    <li class="filter" data-filter="all">all</li>
-                    <li class="filter" data-filter=".professional">professional</li>
-                    <li class="filter" data-filter=".personnal">personnal</li>
-                    <li class="filter" data-filter=".student">student</li>
-                    <li class="filter" data-filter=".non-technical">events</li>
-                </ul>
-            </div>
-            
-            <div class="portfolio-inner">
-                <div class="row">
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix professional">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    AiC is an open-source project to industrialize the development of Android application thanks to a test solution. The goal is to create an Android virtual machine which will then be deployed on a cloud computing infrastructure. I was in charge of the test framework architecture and development
-                                    <br><br>
-                                    <a target="_blank" href="https://aic-project.github.io/index_fr.html">AiC 2.0</a>
-                                </div>
-                            </div>
-                            <img src="images/projects/aic.jpg" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>AiC 2.0</h4>
-                            <p class="text-muted">Android in Cloud project</p>
-                        </div>
-                    </div>
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix professional">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <!--Form@ter est un projet de l'IPGP en collaboration avec l'European Space Agency, ayant pour but d'utiliser les photographies satellites pour déterminer des relevés de déformations topographiques. Je fus en charge de mettre en place et de développer l'architecture entre le data-center de l'ESA et l'interface finale présentée aux chercheurs.-->
-                                    Form@ter is a project of the IPGP in collaboration with the European Space Agency, aiming to use satellite photographs to determine surveys of topographic deformations. I was in charge of setting up and developing the architecture between the ESA data-center and the final interface presented to the researchers.
-                                </div>
-                            </div>
-                            <img src="images/projects/formater.png" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>Form@ter</h4>
-                            <p class="text-muted">Topographic satellite mapping</p>
-                        </div>
-                    </div>
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix personnal">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    Halfred is an open-source program which runs on Raspberry Pi.
-                                    It communicates with all my self-build connected devices and checks my calendar to help me in my everyday life.
-                                    <br><br>
-                                    <a href="https://github.com/CapsHil/Halfred" target="_blank">Halfred</a>
-                                </div>
-                            </div>
-                            <img src="images/projects/halfred.jpg" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>Halfred</h4>
-                            <p class="text-muted">Smart system for home automation</p>
-                        </div>
-                    </div>
+.row {
+    margin: 8px -16px;
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix non-technical student">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <!--Le Colloque est une semaine de séminaire dans une station de sport d'hiver, alliant interactions entre étudiants de 4ème année et entreprises par le biais d'activités sportives et pédagogiques (conférences, ateliers...). Je fus d'abord membre de l'équipe, puis chef du projet afin de porter à bien  cet évènement.-->
-                                    The ESIEA Colloque is a week of seminars in a winter sports resort, combining interactions between 4th year students and companies through sporting and educational activities (conferences, workshops ...). I was first a member of the team, then project manager in order to carry out this event.
-                                    <br><br>
-                                    <a href="https://colloque.esiea.fr" target="_blank">Colloque ESIEA</a>
-                                </div>
-                            </div>
-                            <img src="images/projects/colloque.png" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>Colloque ESIEA</h4>
-                            <p class="text-muted">ESIEA Colloque organization</p>
-                        </div>
-                    </div>
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix student">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <!--Atictendo est un simulateur de borne d'arcade. Développé en C++, il contient 9 mini-jeux classiques des bornes d'arcades, revisités afin de pouvoir y jouer à plusieurs. J'y ai ajouté un DSL pour faciliter la création future de mini-jeux complémentaires.-->
-                                    Atictendo is an arcade terminal simulator. Developed in C ++, it contains 9 classic arcade mini-games, revisited in order to become multiplayer. I added a DSL to facilitate the future creation of complementary mini-games.
-                                </div>
-                            </div>
-                            <img src="images/projects/pacman.jpg" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>Atictendo</h4>
-                            <p class="text-muted">Retro-gaming simulator</p>
-                        </div>
-                    </div>
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
 
-                    <div class="col-md-4 col-sm-6 portfolio-item mix student non-technical">
-                        <div class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <!--À l'ESIEA, le week-end d’intégration est une véritable tradition. Cet évènement regroupe parisiens et lavallois, de toutes les promotions, dans un environnement propice à des activités nombreuses et variées.-->
-                                    <!--Fier d'avoir accueilli plus de 480 étudiants, j'ai pu organiser cet évènement à 2 reprises, en tant que responsable, puis en tant que Président du BDE ESIEA.-->
-                                    At ESIEA, the integration weekend is a true tradition. This event brings together Paris and Laval, all the promotions, in an environment conducive to numerous and varied activities.
-                                    Proud to have welcomed more than 480 students, I was able to organize this event twice, as responsible and then as President of the BDE ESIEA.
-                                </div>
-                            </div>
-                            <img src="images/projects/wei.png" class="img-responsive" alt="">
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>Man vs Wei</h4>
-                            <p class="text-muted">Week-end d'integration 2016 - ESIEA</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center margin-top-50">
-          <a class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right smoth-scroll" href="#contact">Any questions ?</a>
-            </div>
-     
-     </section>
-    <!-- Portfolio End -->
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+</style>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
 

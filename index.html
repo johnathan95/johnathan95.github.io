@@ -28,6 +28,10 @@
   </head>
 
   <body id="page-top">
+<!-- Preloader Start -->
+    <div id="preloader">
+    <div class="loader"></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -290,6 +294,26 @@ opacity:1;
         opacity:0;  
         top:-55px;  
     }
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }</style>
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
@@ -321,12 +345,12 @@ opacity:1;
             <h2 class="section-heading text-white">À propos de moi</h2>
             <hr class="light my-4">
             <img src="img/JN.jpg" alt="jn" width="150" height="150" style="border-radius: 50%;"> <p class="text-faded mb-4">
-            Étudiant en 2ème année école d'ingénieur 🎓 en informatique à l'ESIEA.<br>
+            <br>Étudiant en 2ème année école d'ingénieur 🎓 en informatique à l'ESIEA.<br>
             Rigoureux, persévérant et polyvalent, je souhaiterai mettre mes qualités aux services d'une entreprise.
             <br><br>
 
             J'ai rejoins la banque de financement, de gestion et de services financiers : Natixis dans le cadre de ma formation d'Ingénieur en apprentissage en tant qu'assistant chef de projet développeur WEB, rattaché à la Direction Opérationnelle des Systèmes d'Information. Plus précisément, au sein de l'équipe Relation Groupe BPCE.</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Me contacter</a>    <a class="btn btn-light btn-xl js-scroll-trigger" href="#formation">Télécharger mon CV </a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Me contacter</a>    <a class="btn btn-light btn-xl js-scroll-trigger" href="download/CV - Johnathan NADARAJAH.pdf" download>Télécharger mon CV </a>
           </div>
         </div>
       </div>
@@ -342,13 +366,13 @@ opacity:1;
         </div>
       </div>
         Voici mon parcour scolaire qui ma permis d'acquérir mes connaissances actuelles.<br>
-        Cliquer sur les logos des formations et les <small><a href="#professionnel">+</a></small> pour avoir plus d'informations.
+        Cliquer sur les logos des formations et les <small><a href="#professionnel"><b>+</b></a></small> pour avoir plus d'informations.
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <p class="text-muted mb-0"><small>août 2016 - aujourd'hui (1 an et 10 mois)</small></p>
-              <i class="fa fa-4x text-primary mb-3 sr-icons"><img class="img-fluid" src="img/logo/esiea_logo.png" alt="" width="200" height="200"></i>
+              <a href="" data-toggle="modal" data-target="#ModalEsiea"><i class="fa fa-4x text-primary mb-3 sr-icons"><img class="img-fluid" src="img/logo/esiea_logo.png" alt="" width="200" height="200"></i></a>
               <h3 class="mb-3">ESIEA</h3>
                <p>Cursus ingénieur</p>
               <p class="text-muted mb-0"><small>ESIEA Paris – 74 bis Avenue Maurice Thorez, 94200 Ivry-sur-Seine</small></p>
@@ -357,8 +381,8 @@ opacity:1;
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <p class="text-muted mb-0"><small>juillet 2017 - août 2017 (1 mois)</small></p>
-              <i class="fa fa-4x text-primary mb-3 sr-icons">
-              <img class="img-fluid" src="img/logo/wrexham-glyndwr.jpg" alt="" width="170" height="170"></i>
+              <a href="" data-toggle="modal" data-target="#ModalGlyndwr"><i class="fa fa-4x text-primary mb-3 sr-icons">
+              <img class="img-fluid" src="img/logo/wrexham-glyndwr.jpg" alt="" width="170" height="170"></i></a>
               <h3 class="mb-3">Glyndwr</h3>  <p>Summer School Graduation</p>
               <p class="text-muted mb-0"><small>Wrexham University – 67 Regent Street, Wrexham Wales</small></p>
             </div>
@@ -366,8 +390,8 @@ opacity:1;
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <p class="text-muted mb-0"><small>septembre 2013 - juillet 2016 (3 ans)</small></p>
-              <i class="fa fa-4x text-primary mb-3 sr-icons">
-              <img class="img-fluid" src="img/logo/iut_orsay.jpeg" alt="" width="135" height="135"></i>
+              <a href="" data-toggle="modal" data-target="#ModalDut"><i class="fa fa-4x text-primary mb-3 sr-icons">
+              <img class="img-fluid" src="img/logo/iut_orsay.jpeg" alt="" width="135" height="135"></i></a>
               <h3 class="mb-3">IUT d'Orsay</h3>  <p>DUT Informatique</p>
               <p class="text-muted mb-0"><small>IUT d'Orsay - Plateau de Moulon, 91400 ORSAY</small></p>
             </div>
@@ -376,14 +400,56 @@ opacity:1;
             <div class="service-box mt-5 mx-auto">
               <p class="text-muted mb-0"><small>septembre 2012 - juin 2013 (1 an)</small></p>
               <i class="fa fa-4x text-primary mb-3 sr-icons">
-              <img class="img-fluid" src="img/logo/jean_perrin.jpeg" alt="" width="100" height="100"></i>
-              <h3 class="mb-3">Lycée Jean-Perrin</h3>  <p>Baccalauréat Scientifique  <small><a href="" data-toggle="modal" data-target="#myModal">+</a></small></p>
+              <a href="" data-toggle="modal" data-target="#ModalLycee"><img class="img-fluid" src="img/logo/jean_perrin.jpeg" alt="" width="100" height="100"></i></a>
+              <h3 class="mb-3">Lycée Jean-Perrin</h3>  <p>Baccalauréat Scientifique  <small><a href="" data-toggle="modal" data-target="#myModal"><b>+</b></a></small></p>
               <p class="text-muted mb-0"><small>Lycée Jean Perrin – 2, rue des Égalisses, 95310 Saint-Ouen-l’Aumône</small></p>
             </div>
           </div>
         </div>
       </div>
 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalEsiea" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ESIEA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>L'École supérieure d'informatique électronique automatique, désormais École d’ingénieurs du monde numérique, est l'une des 207 écoles d'ingénieurs françaises accréditées au 1ᵉʳ septembre 2017 à délivrer un diplôme d'ingénieur.<br><br>
+          Fondée en 1958 et habilitée par la CTI pour ses deux campus de Paris et Laval, l’ESIEA forme des ingénieur(e)s généralistes des Sciences et Technologies du Numérique, adaptables à leur environnement technique et humain, ainsi qu’aux exigences de secteurs d’activité très diversifiés en France et à l'international.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalGlyndwr" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Glyndwr university</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Séjour linguistique.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -418,7 +484,7 @@ opacity:1;
         </div>
       </div>
       Voici mon parcour professionnel qui ma permis d'acquérir mes connaissances actuelles.<br>
-      Cliquer sur les logos des entreprises et les <small><a href="#professionnel">+</a></small> pour avoir plus d'informations.
+      Cliquer sur les logos des entreprises et les <small><a href="#professionnel"><b>+</b></a></small> pour avoir plus d'informations.
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
@@ -427,16 +493,16 @@ opacity:1;
               <a href="" data-toggle="modal" data-target="#ModalNatixis"><i class="fa fa-4x text-primary mb-3 sr-icons"><img class="img-fluid" src="img/logo/natixis_logo.gif" alt="" width="200" height="200" ></i></a>
               <h3 class="mb-3">Natixis</h3>
                <p>Assistant chef de projet (Alternance)  <small><a href="" data-toggle="modal" data-target="#myModalNatixis">+</a></small></p>
-              <p class="text-muted mb-0"><small>ESIEA Paris – 74 bis Avenue Maurice Thorez, 94200 Ivry-sur-Seine</small></p>
+              <p class="text-muted mb-0"><small>Natixis – 5 avenue de la Liberté, 94220 Charenton-le-Pont</small></p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <p class="text-muted mb-0"><small>avr. 2016 - juil. 2016 (3 mois)</small></p>
-              <i class="fa fa-4x text-primary mb-3 sr-icons">
-              <img class="img-fluid" src="img/logo/safran-logo.png" alt="" width="200" height="200"></i>
+              <a href="" data-toggle="modal" data-target="#ModalSafran"><i class="fa fa-4x text-primary mb-3 sr-icons">
+              <img class="img-fluid" src="img/logo/safran-logo.png" alt="" width="200" height="200"></i></a>
               <h3 class="mb-3">Safran Aircraft Engines</h3>  <p>Développeur WEB (Stage)  <small><a href="" data-toggle="modal" data-target="#myModalSafran">+</a></small></p>
-              <p class="text-muted mb-0"><small>Wrexham University – 67 Regent Street, Wrexham Wales</small></p>
+              <p class="text-muted mb-0"><small>Safran Aircraft Engines – 171 boulevard de Valmy - BP 31, 92702 Colombes</small></p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -450,11 +516,11 @@ opacity:1;
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <p class="text-muted mb-0"><small>septembre 2012 - juin 2013 (1 an)</small></p>
+              <p class="text-muted mb-0"><small>octobre 2014 - aujourd'hui (4 ans)</small></p>
               <i class="fa fa-4x text-primary mb-3 sr-icons">
               <img class="img-fluid" src="img/logo/jean_perrin.jpeg" alt="" width="100" height="100"></i>
-              <h3 class="mb-3">Lycée Jean-Perrin</h3>  <p>Baccalauréat Scientifique  <small><a href="" data-toggle="modal" data-target="#myModal">+</a></small></p>
-              <p class="text-muted mb-0"><small>Wrexham University – 67 Regent Street, Wrexham Wales</small></p>
+              <h3 class="mb-3">TERA Universe</h3>  <p>Directeur Générale<small><a href="" data-toggle="modal" data-target="#myModal">+</a></small></p>
+              <p class="text-muted mb-0"><small>Page d'informations sur le cinéma et le divertissement</small></p>
             </div>
           </div>
         </div>
@@ -472,6 +538,7 @@ opacity:1;
         </div>
         <div class="modal-body">
           <p style="text-align: left;"><small>
+                    Alternance<br><br>
                     • Gestion de projet, recette d’applications, programmation Web, formation pour les utilisateurs <br>
                     • Conception et développement d’une application de reporting, maintenance corrective <br>
                     • Animation d’atelier de modélisation et d’impression 3D, réalisation de fiche pratiques <br>
@@ -491,12 +558,66 @@ opacity:1;
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Natixis</h4>
+          <h4 class="modal-title">Natixis <i class="fa fa-bank color-4"></i></h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
           <p style="text-align: left;"><small>
                    <img class="img-fluid" src="img/logo/natixis_logo.gif" alt="" width="200" height="200" >Natixis est une banque de financement, de gestion et de services financiers, créée en 2006, filiale du groupe BPCE, elle-même issue de la fusion des groupes Caisse d'épargne et Banque populaire. 
+        
+<br><br><i class="fa fa-globe"></i>  <a href="https://www.natixis.com/natixis/jcms/j_6/fr/accueil">Site Web</a>
+                    </small>
+                  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModalSafran" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Développeur d'une interface Web pour le pilotage en atelier de production</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>
+            Stage de fin de DUT informatique <br><br>
+                    • Développement d'une interface Web(Geoprod) pour le pilotage en atelier <br>
+                    • Comprendre le besoin du client et lui apporter une solution technique <br>
+                    • Programmation Web, maintenance du serveur WAMP et formation des utilisateurs <br>
+                    • Conception, réalisation d’entretien avec les utilisateurs, présentation des améliorations <br></small>
+                  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Modal -->
+  <div class="modal fade" id="ModalSafran" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Safran Aircraft Engines <i class="fa fa-plane color-4"></i> </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>
+                   <img class="img-fluid" src="img/logo/safran-logo.png" alt="" width="200" height="200" >Safran Aircraft Engines, anciennement Société nationale d'étude et de construction de moteurs d'aviation puis Snecma, est une société française du groupe Safran, spécialisée dans l'étude et la fabrication de moteurs pour l'industrie aéronautique et spatiale. Motoriste de premier rang, Safran Aircraft Engines conçoit, développe, produit et commercialise, seul ou en coopération, des moteurs pour avions civils et militaires, pour lanceurs spatiaux et satellites.
+
+                   <br><br><i class="fa fa-globe"></i>  <a href="https://www.safran-aircraft-engines.com/fr/societe/gennevilliers">Site Web</a>
                     </small>
                   </p>
         </div>
@@ -524,26 +645,26 @@ opacity:1;
     <div class="col-sm-10 col-lg-7 mx-auto">
       <div class="row pb-4">
         <div class="col-sm-2 mx-auto skill-logo">
-          <img class="skill-svg" src="../../assets/images/electron.svg">
+          <img src="img/logo/agile-logo.png" width="150" height="80">
         </div>
         <div class="col-sm-2 mx-auto skill-logo">
           <div class="skill-logo">
-            <img src="../../assets/images/php.svg">
+            <img src="img/logo/android-logo.png" width="150" height="80">
           </div>
         </div>
         <div class="col-sm-2 mx-auto skill-logo">
           <div class="skill-logo">
-            <img src="../../assets/images/angular.svg">
+            <img src="img/logo/blender-logo.png" width="150" height="80">
           </div>
         </div>
         <div class="col-sm-2 mx-auto skill-logo">
           <div class="skill-logo">
-            <img src="../../assets/images/android.svg">
+            <img src="img/logo/unity-logo.png" width="150" height="80">
           </div>
         </div>
         <div class="col-sm-2 mx-auto skill-logo">
           <div class="skill-logo">
-            <img src="../../assets/images/ps.svg">
+            <img src="img/logo/php-logo.png" width="150" height="80">
           </div>
         </div>
       </div>
@@ -557,7 +678,7 @@ opacity:1;
           </div>
         </div>
         <div class="col-sm-6">
-          <h4>DEV MOBILE <i class="fa fa-android color-4"></i></h4>
+          <h4>DEV MOBILE <i class="fa fa-apple color-4"></i></h4>
           <p>Android, IOS, Ionic</p>
           <div class="progress">
             <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 70%">70%</div>
@@ -566,14 +687,14 @@ opacity:1;
       </div>
       <div class="row skills-font pb-1 text-center">
         <div class="col-sm-6">
-          <h4>DEV DESKTOP</h4>
+          <h4>DEV DESKTOP <i class="fa fa-laptop color-4"></i></h4>
           <p>Java, C#, Shell, ASM</p>
           <div class="progress">
             <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 75%">75%</div>
           </div>
         </div>
         <div class="col-sm-6">
-          <h4>METHODES AGILE</h4>
+          <h4>METHODES AGILE <i class="fa fa-group color-4"></i></h4>
           <p>Scrum, Jira, Management d'équipe</p>
           <div class="progress">
             <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%">70%</div>
@@ -582,7 +703,7 @@ opacity:1;
       </div>
       <div class="row skills-font pb-1 text-center">
         <div class="col-sm-12">
-          <h4>DESIGN</h4>
+          <h4>DESIGN <i class="fa fa-cubes color-4"></i></h4>
           <p>Blender, Photofiltre, Photoshop, Unity 3D, Monatge Video : Power Director</p>
           <div class="progress">
             <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 80%">80%</div>
@@ -591,18 +712,21 @@ opacity:1;
       </div>
     </div>
   </div>
+  <hr> 
+  <br><a class="btn btn-primary btn-xl js-scroll-trigger" href="" data-toggle="modal" data-target="#comp"> Plus de détails </a>
+
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
+              <h3 class="mb-3">Animation 3D</h3>
               <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
+              <i class="fa fa-4x fa-camera-retro text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Photographie</h3>
               <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
             </div>
           </div>
@@ -622,15 +746,104 @@ opacity:1;
           </div>
         </div>
       </div>
+              <!-- Modal -->
+  <div class="modal fade" id="comp" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Compétences</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <hr>Informatique<hr>
+          <p style="text-align: left;"><b>Langages de programmation :</b> C, C++, java, VB.Net, Shell, Assembleur, C#, Objective-C, R, Python<br>
+          <b>Programmation web :</b> HTML, PHP, JavaScript, CSS, Ajax, Bootstrap<br>
+          <b>Bases de données :</b> Oracle, MySQL<br>
+          <b>Méthode d’analyse :</b> UML<br>
+          <b>Réseau :</b> TCP/IP, DHCP, DNS, routage, configuration, LAN, firewall<br>
+          <b>Infographie 2D/3D :</b> Cinema4D, Iclone, Unity3D, Blender, Photoshop, Photo Filtre<br></p>
+          <hr>Compétences interpersonnelles<hr>
+          <p style="text-align: left;"><b>Gestion de projet :</b> Management, Leadership, Service client, Formation utilisateur, Scrum</p>
+          <hr>Langues<hr>
+          <p style="text-align: left;"><b>Anglais :</b> Bon niveau (parlé, lu, écrit) - TOEIC : 740 <br>
+          <b>Tamoul :</b> Courant (parlé)<br>
+          <b>Espagnol :</b> Scolaire (parlé, lu, écrit)</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
     </section>
 
     <section class="p-0" id="portfolio">
       <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Portfolio</h2>
+        <h2 class="mb-4">Portfolio</h2><hr>
         Voici un aperçu des différents projets que j'ai pu réaliser, à titre personnel, universitaire, professionnel ou associatif.
-      </div>
+      <hr>
+    </div>
+    <div class="container">
+    <div class="gallery">
+    <a href="" data-toggle="modal" data-target="#ModalProjet1">
+        <img src="img/logo/php-logo.png" alt="evenementiel" width="300" height="200">
+      <div class="desc" style="color:white;">Refonte d'une application</div>
+    </a>
+    </div>
+
+    <div class="gallery">
+    <a href="" data-toggle="modal" data-target="#ModalProjet2">
+        <img src="img/portfolio/fullsize/john11.jpg" alt="Projet REX" width="600" height="400">
+      <div class="desc" style="color:white;">Vidéo de présentation</div>
+    </a>
+    </div>
+
+    <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet3">
+        <img src="img/portfolio/fullsize/dwatch1a.jpg" alt="Dwatch" width="600" height="400">
+      
+      <div class="desc" style="color:white;">PFH - Discovery Watch (Dwatch)</div>
+    </a>
+    </div>
+
+    <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet4">
+        <img src="img/portfolio/fullsize/theatre1.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Reservation Manager</div>
+    </div>
+      <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet5">
+        <img src="img/logo/php-logo.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+      <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet6">
+        <img src="img/logo/php-logo.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet7">
+        <img src="img/logo/php-logo.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+     <a href="" data-toggle="modal" data-target="#ModalProjet8">
+        <img src="img/logo/php-logo.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+
       <div class="container-fluid p-0">
 
         <div class="row no-gutters popup-gallery">
@@ -640,10 +853,10 @@ opacity:1;
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Projet technique
+                    #JohnathanNadarajahPhotography
                   </div>
                   <div class="project-name">
-                    Project Name
+                    La Pyramide du Louvre
                   </div>
                 </div>
               </div>
@@ -655,10 +868,10 @@ opacity:1;
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Projet humain
+                    #JN3Design
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Thanos & Co
                   </div>
                 </div>
               </div>
@@ -670,10 +883,10 @@ opacity:1;
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Projet technique
+                    #JohnathanNadarajahPhotography
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Photoshoot
                   </div>
                 </div>
               </div>
@@ -728,23 +941,121 @@ opacity:1;
       </div>
 
         <!-- Modal -->
-  <div class="modal fade" id="projet1" role="dialog">
+  <div class="modal fade" id="ModalProjet1" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title" style="text-align: left;">Gestion de projet sur la refonte d'une application d'événementiel</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Baccalauréat Scientifique Science de l’ingénieur Spécialisation : Mathématiques et Option : Histoire-Géographie</p>
+          <p style="text-align: left;"><small>Associé à mon alternance chez Natixis en tant que assistant chef de projet</small><br></p><hr>
+            <p style="text-align: left;"><b>Rôle :</b> Chef de projet <br>
+          Rédaction de spécification fonctionnelles, Maquettes UI/UX, Recette des livraisons, Weekly avec les prestataires. </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
         </div>
       </div>
       
+    </div>
+  </div>
+          <!-- Modal -->
+  <div class="modal fade" id="ModalProjet2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="text-align: left;">Vidéo de présentation de la mission chez Natixis</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>Projet de communication</small><hr>
+          <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+          <p style="text-align: left;">Lors de la deuxième année d'ingénieur au sein de l'ESIEA, nous avions à réaliser une vidéo nous présentant nous et nos missions. <br><br>Au cours de cette vidéo pitch de 2min30, il était question de
+me présenter, ce que je fais en entreprise, dans quel service, le tout dans une vidéo de 2min 30sec.<br><br>Cette expérience m'a permis de me situer par rapport à l'entreprise et d'améliorer ma façon de me présenter.<br><br>
+          <b>Techonologies :</b>Camstasia, Iclone 3D<br>
+          <b>Expériences acquises :</b> Prise de vue/son, montage vidéo, gestion et respect des deadlines.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+          <!-- Modal -->
+  <div class="modal fade" id="ModalProjet3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Projet de Formation Humaine - Discovery Watch (Dwatch)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>Projet prototype réalisé avec un groupe de 7 personnes     <br> Durée du projet: nov. 2016 – mai 2017</small><hr>
+          <p style="text-align: left;">Une montre connecté permettant de découvrir des Street Arts. Grâce à un scan de QR code, la montre projette des hologrammes avec les informations sur des street artistes.<br><br><i class="fa fa-facebook"></i>  <small><a href="https://www.facebook.com/dwatchpfh/">Page Facebook</a></small></p><img src="img/portfolio/fullsize/dwatch1.jpg" alt="Dwatch" width="auto" height="400">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+          <!-- Modal -->
+  <div class="modal fade" id="ModalProjet4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Projet de Formation Humaine - Discovery Watch (Dwatch)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>Projet prototype réalisé avec un groupe de 7 personnes     <br> Durée du projet: nov. 2016 – mai 2017</small><hr>
+          <p style="text-align: left;">Durant la deuxième année d'ingénieur au sein de l'ESIEA, un projet Java nous a été donné. Il s'agissait de créer un logiciel de gestion de réservation de sièges dans un théatre. J'y ai rajouté la fonctionnalité de gérer plusieurs théatres différents.<br><br><i class="fa fa-github"></i>  <small><a href="https://github.com/johnathan95/Projet-POO">Lien vers le GitHub</a></small></p><img src="img/portfolio/fullsize/theatre.png" alt="Dwatch" width="450" height="400">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!-- Modal -->
+  <div class="modal fade" id="ModalProjet5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Site de gestion des stages</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: left;"><small>Durée du projet: oct. 2015 – janv. 2016</small><hr>
+          <p style="text-align: left;">
+
+            Projet réalisé par 2 en HTML, PHP et SQL, en deuxième année de DUT Informatique.
+
+            L'objectif était de réaliser un site web qui puisse être utilisé dans le cadre de la gestion des stages de fin d'étude du DUT Informatique. <br><br>Les différents langages utilisés sont le HTML, le PHP, ainsi que du SQL (avec MySQLi pour accéder à la base de données). <br><br>L'architecture MVC a été utilisée pour séparer les pages des déclarations des classes en PHP, ainsi que des interactions avec la base de données.
+            Du JavaScript a été utilisé en complément du PHP, pour afficher un tableau trié automatiquement selon les critères du l'utilisateur.<br><br><i class="fa fa-github"></i>  <small><a href="https://github.com/johnathan95/Projet_Web">Lien vers le GitHub</a></small></p><img src="img/portfolio/fullsize/stagio-logo.png" alt="Dwatch" width="100%" height="100%">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
     </div>
   </div>
     </section>
@@ -755,13 +1066,13 @@ opacity:1;
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Entrons en contact !</h2>
             <hr class="my-4">
-            <p class="mb-5">Prêt à commencer votre prochain projet avec moi ? C'est génial! Appelez-moi ou envoyez-moi un courriel et je vous répondrais dans les plus brefs délais!</p>
+            <p class="mb-5">Prêt à commencer votre prochain projet avec moi ? C'est génial!<br> Appelez-moi ou envoyez-moi un courriel et je vous répondrais dans les plus brefs délais!</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>(+33)7 50 99 64 61</p>
+            <p><a href="tel:+0750996461">(+33)7 50 99 64 61</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
@@ -772,7 +1083,7 @@ opacity:1;
         </div>
         <div class="row">
     <div class="col-sm-10 col-lg-7 mx-auto">
-      <h3 class="pb-5">Contact</h3>
+      <hr>
       <app-form><div class="container-fluid col-sm-8">
   <form action="https://formspree.io/johnathan.nadarajah@gmail.com" method="POST" novalidate="" class="ng-pristine ng-invalid ng-touched">
     <div class="form-row">
@@ -790,7 +1101,7 @@ opacity:1;
       <!----><div class="alert alert-danger">Texte entre 10-500 caractères</div>
     </div>
     <div class="text-right">
-      <button class="btn btn-primary btn-footer" type="submit" disabled="">Envoyer</button>
+      <button class="btn btn-primary btn-footer" type="submit" >Envoyer</button>
     </div>
   </form>
 </div></app-form>
@@ -801,38 +1112,32 @@ opacity:1;
             <div class="service-box mt-5 mx-auto">
               <a href="https://www.linkedin.com/in/johnathan-nadarajah-319519ba/" target="_blank" class="linkedin"><i class="fa fa-4x fa fa-linkedin text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">LinkedIn</h3></a>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              <p class="text-muted mb-0">Pour consulter mon profil et me contacter directement.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa fa-github text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">GitHub</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+              <a href="https://github.com/johnathan95" target="_blank" class="github"><i class="fa fa-4x fa fa-github text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">GitHub</h3></a>
+              <p class="text-muted mb-0">Pour consulter les codes sources de mes différents projets.</p>
+            </div>
+          </div>
+           <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <a href="https://www.facebook.com/johnathan.nadarajah" target="_blank" class="facebook"><i class="fa fa-4x fa-facebook text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Facebook</h3></a>
+              <p class="text-muted mb-0">Pour consulter mes pages Facebook et rentrer en contact</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa fa-google-plus text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Google+</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-facebook text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Facebook</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+              <a href="https://www.linkedin.com/in/johnathan-nadarajah-319519ba/" target="_blank" class="linkedin"><i class="fa fa-4x fa fa-instagram text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Instagram</h3></a>
+              <p class="text-muted mb-0">Pour voir mes créations et me contacter directement.</p>
             </div>
           </div>
         </div>
       </div>
-
-         <a href="https://www.facebook.com/capshil" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
-         <a href="https://twitter.com/CapsHil" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-         <a href="https://plus.google.com/u/1/103638423437603217657" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
-         <a href="https://www.linkedin.com/in/johnathan-nadarajah-319519ba/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-         <a href="https://github.com/CapsHil" target="_blank" class="github"><i class="fa fa-github"></i></a>
     </section>
     <!-- Footer Start -->
     <footer class="footer-section">
